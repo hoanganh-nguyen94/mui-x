@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { useLicenseVerifier, Watermark } from '@mui/x-license';
+
 import {
   GridBody,
   GridFooterPlaceholder,
@@ -41,7 +41,7 @@ const DataGridPremiumRaw = React.forwardRef(function DataGridPremium<R extends G
   const props = useDataGridPremiumProps(inProps);
   const privateApiRef = useDataGridPremiumComponent(props.apiRef, props);
 
-  useLicenseVerifier('x-data-grid-premium', releaseInfo);
+
 
   if (process.env.NODE_ENV !== 'production') {
     validateProps(props, dataGridPremiumPropValidators);
@@ -57,7 +57,7 @@ const DataGridPremiumRaw = React.forwardRef(function DataGridPremium<R extends G
       >
         <GridHeader />
         <GridBody>
-          <Watermark packageName="x-data-grid-premium" releaseInfo={releaseInfo} />
+
         </GridBody>
         <GridFooterPlaceholder />
       </GridRoot>
