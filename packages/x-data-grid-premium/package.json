@@ -4,7 +4,7 @@
   "description": "The Premium plan edition of the Data Grid Components (MUI X).",
   "author": "MUI Team",
   "main": "src/index.ts",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mui/mui-x/issues"
   },
@@ -46,8 +46,6 @@
     "@babel/runtime": "^7.24.7",
     "@mui/system": "^5.15.20",
     "@mui/utils": "^5.15.20",
-    "@mui/x-data-grid": "workspace:*",
-    "@mui/x-data-grid-pro": "workspace:*",
 
     "@types/format-util": "^1.0.4",
     "clsx": "^2.1.1",
@@ -58,7 +56,9 @@
   "peerDependencies": {
     "@mui/material": "^5.15.14",
     "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "@mui/x-data-grid-pro": "workspace:*",
+    "@mui/x-data-grid": "workspace:*"
   },
   "devDependencies": {
     "@mui/internal-test-utils": "^1.0.1",
