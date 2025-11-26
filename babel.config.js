@@ -1,5 +1,5 @@
 const { default: getBaseConfig } = require('@mui/internal-code-infra/babel-config');
-const generateReleaseInfo = require('./packages/x-license/generateReleaseInfo');
+
 
 /**
  * @typedef {import('@babel/core')} babel
@@ -39,10 +39,7 @@ module.exports = function getBabelConfig(api) {
         'search-and-replace',
         {
           rules: [
-            {
-              search: '__RELEASE_INFO__',
-              replace: generateReleaseInfo(),
-            },
+
           ],
         },
       ]);
