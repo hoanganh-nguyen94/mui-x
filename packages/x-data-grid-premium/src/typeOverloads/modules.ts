@@ -20,7 +20,6 @@ import type {
 } from '../hooks';
 import { GridRowGroupingInternalCache } from '../hooks/features/rowGrouping/gridRowGroupingInterfaces';
 import { GridAggregationInternalCache } from '../hooks/features/aggregation/gridAggregationInterfaces';
-import type { GridExcelExportOptions } from '../hooks/features/export/gridExcelExportInterface';
 import type {
   GridPivotingInternalCache,
   GridPivotModel,
@@ -43,7 +42,6 @@ export interface GridControlledStateEventLookupPremium {
   /**
    * Fired when the state of the Excel export task changes
    */
-  excelExportStateChange: { params: 'pending' | 'finished' };
   /**
    * Fired when the pivot model changes.
    */
@@ -171,11 +169,9 @@ declare module '@mui/x-data-grid-pro' {
   interface GridApiCaches extends GridApiCachesPremium {}
 
   interface GridToolbarExportProps {
-    excelOptions?: GridExcelExportOptions & GridExportDisplayOptions;
   }
 
   interface GridToolbarProps {
-    excelOptions?: GridExcelExportOptions & GridExportDisplayOptions;
   }
 }
 

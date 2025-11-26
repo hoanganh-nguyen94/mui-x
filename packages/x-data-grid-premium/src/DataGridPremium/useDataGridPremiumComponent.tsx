@@ -95,7 +95,6 @@ import {
 } from '../hooks/features/rowGrouping/useGridRowGrouping';
 import { useGridRowGroupingPreProcessors } from '../hooks/features/rowGrouping/useGridRowGroupingPreProcessors';
 import { useGridDataSourceRowGroupingPreProcessors } from '../hooks/features/rowGrouping/useGridDataSourceRowGroupingPreProcessors';
-import { useGridExcelExport } from '../hooks/features/export/useGridExcelExport';
 import {
   cellSelectionStateInitializer,
   useGridCellSelection,
@@ -238,7 +237,6 @@ export const useDataGridPremiumComponent = (
   useGridColumnMenu(apiRef);
   useGridCsvExport(apiRef, props);
   useGridPrintExport(apiRef, props);
-  useGridExcelExport(apiRef, props);
   useGridClipboard(apiRef, props);
   useGridDimensions(apiRef, props);
   useGridEvents(apiRef, props);

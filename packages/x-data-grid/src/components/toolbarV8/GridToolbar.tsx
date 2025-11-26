@@ -21,7 +21,6 @@ import { getDataGridUtilityClass } from '../../constants/gridClasses';
 
 interface GridToolbarInternalProps {
   additionalItems?: React.ReactNode;
-  additionalExportMenuItems?: (onMenuItemClick: () => void) => React.ReactNode;
 }
 
 export type GridToolbarProps = GridSlotProps['toolbar'] & GridToolbarInternalProps;
@@ -97,7 +96,6 @@ function GridToolbar(props: GridToolbarProps) {
     csvOptions,
     printOptions,
     additionalItems,
-    additionalExportMenuItems,
     ...other
   } = props;
   const apiRef = useGridApiContext();
@@ -108,8 +106,7 @@ function GridToolbar(props: GridToolbarProps) {
   const exportMenuTriggerId = useId();
   const showExportMenu =
     !csvOptions?.disableToolbarButton ||
-    !printOptions?.disableToolbarButton ||
-    additionalExportMenuItems;
+    !printOptions?.disableToolbarButton ;
   const closeExportMenu = () => setExportMenuOpen(false);
 
   return (
@@ -199,7 +196,6 @@ function GridToolbar(props: GridToolbarProps) {
                   {apiRef.current.getLocaleText('toolbarExportCSV')}
                 </ExportCsv>
               )}
-              {additionalExportMenuItems?.(closeExportMenu)}
             </rootProps.slots.baseMenuList>
           </GridMenu>
         </React.Fragment>

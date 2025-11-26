@@ -1,5 +1,6 @@
 {
   "name": "@mui/x-data-grid-pro",
+  "version": "8.19.0",
   "license": "UNLICENSED",
   "sideEffects": [
     "**/*.css"

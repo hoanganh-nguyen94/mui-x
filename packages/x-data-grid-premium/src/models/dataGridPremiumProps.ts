@@ -213,7 +213,6 @@ export interface DataGridPremiumPropsWithoutDefaultValue<R extends GridValidRowM
    * Callback fired when the state of the Excel export changes.
    * @param {string} inProgress Indicates if the task is in progress.
    */
-  onExcelExportStateChange?: (inProgress: 'pending' | 'finished') => void;
   /**
    * Callback fired before the clipboard paste operation starts.
    * Use it to confirm or cancel the paste operation.
