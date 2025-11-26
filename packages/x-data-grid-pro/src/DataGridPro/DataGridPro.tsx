@@ -1,7 +1,6 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { useLicenseVerifier, Watermark } from '@mui/x-license';
 import { GridRoot, GridContextProvider, GridValidRowModel } from '@mui/x-data-grid';
 import {
   GridConfiguration,
@@ -36,7 +35,6 @@ const configuration: GridConfiguration = {
   },
 };
 const releaseInfo = '__RELEASE_INFO__';
-const watermark = <Watermark packageName="x-data-grid-pro" releaseInfo={releaseInfo} />;
 
 const DataGridProRaw = forwardRef(function DataGridPro<R extends GridValidRowModel>(
   inProps: DataGridProProps<R>,
@@ -48,7 +46,6 @@ const DataGridProRaw = forwardRef(function DataGridPro<R extends GridValidRowMod
     props,
   );
   useDataGridProComponent(privateApiRef, props, configuration);
-  useLicenseVerifier('x-data-grid-pro', releaseInfo);
 
   if (process.env.NODE_ENV !== 'production') {
     validateProps(props, propValidatorsDataGridPro);
@@ -63,7 +60,6 @@ const DataGridProRaw = forwardRef(function DataGridPro<R extends GridValidRowMod
         {...props.slotProps?.root}
         ref={ref}
       >
-        {watermark}
       </GridRoot>
     </GridContextProvider>
   );

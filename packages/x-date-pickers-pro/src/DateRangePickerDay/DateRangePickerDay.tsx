@@ -2,7 +2,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { useLicenseVerifier } from '@mui/x-license';
+
 import { alpha, styled, useThemeProps } from '@mui/material/styles';
 import composeClasses from '@mui/utils/composeClasses';
 import { usePickerDayOwnerState } from '@mui/x-date-pickers/internals';
@@ -281,7 +281,7 @@ const DateRangePickerDayRaw = React.forwardRef(function DateRangePickerDay(
     ...other
   } = props;
 
-  useLicenseVerifier('x-date-pickers-pro', '__RELEASE_INFO__');
+
   const adapter = usePickerAdapter();
 
   const shouldRenderHighlight = isHighlighting && !outsideCurrentMonth;

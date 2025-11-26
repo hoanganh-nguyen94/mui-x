@@ -40,7 +40,6 @@
     "@mui/utils": "catalog:",
     "@mui/x-date-pickers": "workspace:*",
     "@mui/x-internals": "workspace:*",
-    "@mui/x-license": "workspace:*",
     "clsx": "catalog:",
     "prop-types": "catalog:",
     "react-transition-group": "catalog:"

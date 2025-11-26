@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { useLicenseVerifier, Watermark } from '@mui/x-license';
+
 import {
   GridRoot,
   GridContextProvider,
@@ -60,7 +60,6 @@ const configuration: GridConfiguration<GridPrivateApiPremium, DataGridPremiumPro
   },
 };
 const releaseInfo = '__RELEASE_INFO__';
-const watermark = <Watermark packageName="x-data-grid-premium" releaseInfo={releaseInfo} />;
 
 let dataGridPremiumPropValidators: PropValidator<DataGridPremiumProcessedProps>[];
 
@@ -79,7 +78,6 @@ const DataGridPremiumRaw = forwardRef(function DataGridPremium<R extends GridVal
   );
 
   const props = useDataGridPremiumComponent(privateApiRef, initialProps, configuration);
-  useLicenseVerifier('x-data-grid-premium', releaseInfo);
 
   if (process.env.NODE_ENV !== 'production') {
     validateProps(props, dataGridPremiumPropValidators);
@@ -102,7 +100,6 @@ const DataGridPremiumRaw = forwardRef(function DataGridPremium<R extends GridVal
         ref={ref}
         sidePanel={sidePanel}
       >
-        {watermark}
       </GridRoot>
     </GridContextProvider>
   );

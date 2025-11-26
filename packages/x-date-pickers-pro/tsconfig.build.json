@@ -13,7 +13,6 @@
   },
   "references": [
     { "path": "../x-date-pickers/tsconfig.build.json" },
-    { "path": "../x-license/tsconfig.build.json" },
     { "path": "../x-internals/tsconfig.build.json" }
   ],
   "include": ["./src/**/*.ts*"],

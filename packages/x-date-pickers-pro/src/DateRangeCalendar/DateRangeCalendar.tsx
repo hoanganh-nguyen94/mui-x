@@ -9,7 +9,7 @@ import useSlotProps from '@mui/utils/useSlotProps';
 import { styled, useThemeProps } from '@mui/material/styles';
 import composeClasses from '@mui/utils/composeClasses';
 import useId from '@mui/utils/useId';
-import { Watermark } from '@mui/x-license';
+
 import {
   BaseDateValidationProps,
   DayCalendar,
@@ -586,7 +586,7 @@ const DateRangeCalendar = React.forwardRef(function DateRangeCalendar(
       ownerState={ownerState}
       {...other}
     >
-      <Watermark packageName="x-date-pickers-pro" releaseInfo={releaseInfo} />
+
       {calendarMonths.map((monthIndex) => {
         const month = visibleMonths[monthIndex];
         const labelId = `${id}-grid-${monthIndex}-label`;
