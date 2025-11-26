@@ -14,11 +14,7 @@
     "build": "code-infra build",
     "prebuild": "rimraf build tsconfig.build.tsbuildinfo"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mui/mui-x.git",
-    "directory": "packages/x-data-grid-pro"
-  },
+
   "dependencies": {
     "@babel/runtime": "^7.28.4",
     "@mui/utils": "^7.3.5",
