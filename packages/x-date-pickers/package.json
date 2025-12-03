@@ -39,13 +39,13 @@
     "directory": "packages/x-date-pickers"
   },
   "dependencies": {
-    "@babel/runtime": "catalog:",
-    "@mui/utils": "catalog:",
-    "@mui/x-internals": "workspace:*",
-    "@types/react-transition-group": "catalog:",
-    "clsx": "catalog:",
-    "prop-types": "catalog:",
-    "react-transition-group": "catalog:"
+    "@babel/runtime": "^7.28.4",
+    "@mui/utils": "^7.3.5",
+    "@types/react-transition-group": "^4.4.12",
+    "clsx": "^2.1.1",
+    "prop-types": "^15.8.1",
+    "react-transition-group": "^4.4.5",
+    "@mui/x-internals": "8.19.0"
   },
   "peerDependencies": {
     "@emotion/react": "^11.9.0",

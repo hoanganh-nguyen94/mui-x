@@ -618,7 +618,7 @@ importers:
   packages/x-date-pickers:
     dependencies:
       '@babel/runtime':
-        specifier: 'catalog:'
+        specifier: ^7.28.4
         version: 7.28.4
       '@emotion/react':
         specifier: ^11.9.0
@@ -627,22 +627,22 @@ importers:
         specifier: ^11.8.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.2)(react@19.2.0))(@types/react@19.2.2)(react@19.2.0)
       '@mui/utils':
-        specifier: 'catalog:'
+        specifier: ^7.3.5
         version: 7.3.5(@types/react@19.2.2)(react@19.2.0)
       '@mui/x-internals':
-        specifier: workspace:*
-        version: link:../x-internals/build
+        specifier: 8.19.0
+        version: 8.19.0(@types/react@19.2.2)(react@19.2.0)
       '@types/react-transition-group':
-        specifier: 'catalog:'
+        specifier: ^4.4.12
         version: 4.4.12(@types/react@19.2.2)
       clsx:
-        specifier: 'catalog:'
+        specifier: ^2.1.1
         version: 2.1.1
       prop-types:
-        specifier: 'catalog:'
+        specifier: ^15.8.1
         version: 15.8.1
       react-transition-group:
-        specifier: 'catalog:'
+        specifier: ^4.4.5
         version: 4.4.5(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     devDependencies:
       '@mui/internal-test-utils':
